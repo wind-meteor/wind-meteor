@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="page.css" />
+		<link rel="stylesheet" type="text/css" href="../../ionic/css/ionic.css" />
+		<script src="../../ionic/js/ionic.bundle.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../ionic/js/ionic.js"></script>
+	</head>
+	<body>
+		<ion-view id="Page" cache-view="false">
+			<ion-slide-box auto-play="true" id="Page" on-slide-changed="slideHasChanged($index)">
+				<ion-slide>
+					<div class="box">
+						<img src="img/Cow.png">
+						<div>
+							<h1>视频面试</h1>
+							<p>10分钟完成一个面试</p>
+						</div>
+					</div>
+				</ion-slide>
+				<ion-slide>
+					<div class="box">
+						<img src="img/Robot.png">
+						<div>
+							<h1>优聊职位</h1>
+							<p>投递之前先和HR聊聊</p>
+						</div>
+
+					</div>
+				</ion-slide>
+				<ion-slide>
+					<div class="box">
+						<img src="img/Trash.png">
+						<div>
+							<h1>简历附件</h1>
+							<p>更丰富的展示自己的能力</p>
+						</div>
+
+					</div>
+				</ion-slide>
+				<ion-slide>
+					<div class="box">
+						<img src="img/cream.png">
+						<div class="but">
+							<h1>雇主点评</h1>
+							<p>用大实话点评你的雇主</p>
+							<button id="close" ng-click="func_goHome()">立即体验</button>
+						</div>
+					</div>
+				</ion-slide>
+			</ion-slide-box>
+		</ion-view>
+	</body>
+</html>

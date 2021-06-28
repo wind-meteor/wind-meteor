@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>列表详情</title>
+		<script src="../../ionic/js/ionic.bundle.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../ionic/css/ionic.css" />
+	</head>
+	<body>
+		<ion-view id="pro" view-title="职位详情" hide-back-button="true" cache-view="false">
+			<!-- 内容 -->
+			<ion-content class="scroll-content" scroll="true">
+
+				<!-- 返回 + 职位名 -->
+				<div id="header">
+					<div class="proBack">
+						<div ng-click="Back()">
+							<span>
+								<i class="icon ion-chevron-left"></i>
+							</span>
+						</div>
+					</div>
+					<div class="proName">
+						<span>{{obj_ProInfo.name}}</span>
+					</div>
+					<div></div>
+				</div>
+
+				<!-- 地址 + 经验 -->
+				<div class="AdEx">
+					<div class="addr">
+						<div class="addrIn">
+							<i class="icon ion-ios-location"></i>
+							<span>{{obj_ProInfo.addr}}</span>
+						</div>
+						<div class="addrIn">
+							<i class="icon ion-briefcase"></i>
+							<span>{{obj_ProInfo.exper}}<span>
+						</div>
+					</div>
+					<div class="date">
+						<p>更新于{{obj_ProInfo.date}}</p>
+					</div>
+				</div>
+
+				<!-- 公司信息 -->
+				<div class="item item-divider" id="inten">
+					<!-- 图片 + 详细 -->
+					<div class="intenLeft">
+						<img src="{{obj_ProInfo.src}}">
+						<p>{{obj_ProInfo.HR}}<span>/HR</span></p>
+					</div>
+					<i class=" icon ion-chevron-right"></i>
+				</div>
+
+					<!-- 职位描述 -->
+					<div class="item item-divider" id="describe">
+						<div class="top">
+							<p>职位描述</p>
+							<div class="tag">
+								<i class="icon ion-android-star-outline"></i>
+								<i class="icon ion-ios-heart-outline"></i>
+							</div>
+						</div>
+						<div class="conIn">
+							<p>{{obj_ProInfo.content}}</p>
+						</div>
+					</div>
+
+					<div id="last">
+						<button type="button">投递简历</button>
+					</div>
+			</ion-content>
+		</ion-view>
+	</body>
+</html>

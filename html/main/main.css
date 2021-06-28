@@ -1,0 +1,79 @@
+#peo{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 25px 0;
+}
+
+.resume{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: 40px;
+}
+
+.resume p{
+	margin: 0;
+	font-size: 20pt;
+	margin-right: 10px;
+	letter-spacing: 1px;
+	padding: 3px 0 5px 0;
+}
+
+.resume i{
+	font-size: 10pt;
+}
+
+#peo img{
+	margin-right: 50px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+.item-divider{
+	padding-left: 0;
+	padding-bottom: 0;
+	background-color: white;
+}
+
+#record{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	padding-left:15px;
+	border-bottom: 0.5px solid #AAAAAA;
+}
+
+.strip{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.strip i{
+	font-size: 13pt;
+}
+
+.strip p{
+	margin: 0;
+	font-size: 15pt;
+	margin-left: 5px;
+	letter-spacing: 3px;
+	padding: 10px 0 10px 0;
+}
+
+#record i{
+	font-size: 10pt;
+}
+
+.lett{
+	width: 100%;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	background-color: #ecedef;
+}

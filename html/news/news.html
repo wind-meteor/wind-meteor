@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../ionic/css/ionic.css" />
+		<script src="../../ionic/js/ionic.bundle.js"></script>
+	</head>
+	<body>
+		<ion-view id="news" view-title="消息" cache-view="false">
+			<!-- app头部 -->
+			<ion-header-bar class="item-input-inset bar-positive">
+				<div id="top">
+					<div class="tips">
+						<p>消息</p>
+						<p>通知</p>
+						<p>谁看了我</p>
+					</div>
+					<button type="button" id="btn">
+						<i class="icon ion-ios-checkmark-outline"></i>
+						<p>全部已读</p>
+					</button>
+				</div>
+			</ion-header-bar>
+
+			<!-- 内容 -->
+			<ion-content class="scroll-content" scroll="true">
+
+				<div id="none">
+					<div class="noneIn">
+						<p>全部</p>
+						<p>招呼</p>
+						<p>沟通中</p>
+					</div>
+					<i class="icon ion-android-search"></i>
+				</div>
+
+				<ion-scroll direction="y" zooming="true" scrollbar-x="false" style="width: 100%; height: 800px;">
+					<div id="newsMar" ng-repeat="item in obj_NewsData">
+						<div class="Mar">
+							<img src="{{item.src}}">
+							<div class="inf">
+								<div class="infIn">
+									<p>{{item.name}}</p>
+									<span>{{item.HR}}/{{item.comp}}</span>
+								</div>
+								<p>
+									<span>[{{item.prefix}}]</span>
+									{{item.content}}
+								</p>
+							</div>
+						</div>
+						<p>
+							{{item.date}}
+						</p>
+					</div>
+					<div ng-hide="pms_isMoreItemsAvailable" style="text-align: center;">
+						<span>没有更多啦！</span>
+					</div>
+				</ion-scroll>
+			</ion-content>
+		</ion-view>
+	</body>
+</html>

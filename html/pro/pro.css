@@ -1,0 +1,144 @@
+#header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 20px;
+	align-items: center;
+	font-size: 20pt;
+	padding: 20px 0 20px 0;
+	margin: 20px 0 5px 0;
+}
+
+.proBack{
+	margin-left: 10px;
+}
+
+.AdEx {
+	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.addr {
+	display: flex;
+	height: 20px;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	font-size: 12pt;
+}
+
+.addrIn {
+	margin-right: 25px;
+}
+
+.addrIn:first-child {
+	margin-left: 10px;
+}
+
+.addrIn i {
+	margin-right: 5px;
+}
+
+.date {
+	font-size: 6pt;
+	margin-left: 20px;
+	margin-top: 10px;
+	color: #AAAAAA;
+}
+
+#inten {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: white;
+	align-items: center;
+	padding-top: 10px;
+}
+
+#inten i{
+	font-size: 10pt;
+}
+
+.intenLeft {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 10px 0 10px 30px;
+}
+
+.intenLeft img {
+	width: 60px;
+	height: 60px;
+	margin-right: 25px;
+	border-radius: 50%;
+}
+
+.intenLeft p {
+	font-size: 20pt;
+	padding-top: 15px;
+}
+
+.intenLeft p span {
+	font-size: 12pt;
+	color: #AAAAAA;
+}
+
+#describe {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+}
+
+.top {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.top p {
+	margin-left: 15px;
+	font-size: 20pt;
+	padding: 20px 0 10px 0;
+}
+
+.tag {
+	font-size: 20pt;
+	letter-spacing: 5px;
+}
+
+.conIn{
+	word-wrap: break-word;
+	word-break: break-all;
+	overflow: hidden;
+}
+
+.conIn p{
+	font-size: 13pt;
+	padding: 10px 0 20px 0;
+}
+
+#last{
+	position: fixed;
+	bottom: 30px;
+	left: 30%;
+	width: 100%;
+}
+
+#last button{
+	width: 40%;
+	height: 30px;
+	background-color: #4b7bec;
+	border-radius: 30px;
+	border: 0;
+	color: white;
+	font-family: "楷体";
+	font-size: 13pt;
+	letter-spacing: 5px;
+	box-shadow: 3px 3px 5px black;
+	text-align: center;
+}

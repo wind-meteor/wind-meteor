@@ -1,0 +1,44 @@
+#Page {
+	height: 100%;
+}
+
+#Page .box {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#Page img {
+	width: 100%;
+	height: 50%;
+}
+
+.box{
+	text-align: center;
+}
+
+#Page h1 {
+	font-size: 20pt;
+}
+
+#Page p {
+	margin: 0;
+	font-size: 10pt;
+}
+
+#Page button {
+	background-color: white;
+	padding: 10px;
+	text-align: center;
+	border-radius: 15px;
+	margin: 0 auto;
+}
+
+#Page .but{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}

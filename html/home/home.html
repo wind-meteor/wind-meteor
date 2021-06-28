@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title>欸嘿招聘</title>
+		<link rel="stylesheet" href="../../ionic/css/ionic.css">
+		<script src="../../ionic/js/ionic.bundle.js"></script>
+
+		<script type="text/javascript">
+			angular.module('phoneApp', ['ionic'])
+
+				.controller('SlideController', function($scope) {
+
+					$scope.myActiveSlide = 1;
+
+				})
+		</script>
+
+	</head>
+	<body ng-app="phoneApp" ng-controller="SlideController">
+		<ion-view view-title="职位" id="home" cache-view="false">
+
+			<!-- app头部 -->
+			<ion-header-bar class="item-input-inset bar-positive" style="z-index: 100;">
+				<label for="search" class="item-input-wrapper" id="headerSea">
+					<i class="ion-ios-search" style="color: #000000;"></i>
+					<input type="text" name="search" id="search" placeholder="搜索职位/公司" />
+				</label>
+			</ion-header-bar>
+
+			<!-- 内容 -->
+			<ion-content scroll="true" overflow-scroll="true" id="Pic">
+				<!-- 搜索框下照片 -->
+				<ion-slide-box active-slide="myActiveSlide" auto-play="true">
+					<ion-slide>
+						<div class="box">
+							<img src="img/zhaopin1.jpg" />
+						</div>
+					</ion-slide>
+					<ion-slide>
+						<div class="box">
+							<img src="img/zhaopin2.jpg" />
+						</div>
+					</ion-slide>
+					<ion-slide>
+						<div class="box">
+							<img src="img/zhaopin3.jpg" />
+						</div>
+					</ion-slide>
+				</ion-slide-box>
+
+
+				<!-- 公告 -->
+				<div class="row">
+					<div class="col col-50, height">
+						<div class="showMore">
+							<div class="fontSty">
+								<p>找实习</p>
+								<p>优质实习等你</p>
+							</div>
+							<img src="img/Hat.png">
+						</div>
+					</div>
+					<div class="col col-50, height">
+						<div class="showMore">
+							<div class="fontSty">
+								<p>找全职</p>
+								<p>名企聚集地</p>
+							</div>
+							<img src="img/submit.png">
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col col-50, height">
+						<p style="font-size: 13pt; font-weight: 500;">校内宣讲会</p>
+						<div class="showMore">
+							<div class="fontSty">
+								<p style="font-size: 5pt; color: #8f8f8f;">HR面对面</p>
+							</div>
+							<img src="img/think.png">
+						</div>
+					</div>
+					<div class="col col-50, height">
+						<p style="font-size: 13pt; font-weight: 500;">空中宣讲会</p>
+						<div class="showMore">
+							<div class="fontSty">
+								<p style="font-size: 5pt; color: #8f8f8f;">寝室看宣讲</p>
+							</div>
+							<img src="img/wel.png">
+						</div>
+					</div>
+					<div class="col col-50, height">
+						<p style="font-size: 13pt; font-weight: 500;">空中双选会</p>
+						<div class="showMore">
+							<div class="fontSty">
+								<p style="font-size: 5pt; color: #8f8f8f;">本校专属职位</p>
+							</div>
+							<img src="img/examine.png">
+						</div>
+					</div>
+				</div>
+
+				<!-- 联通车 -->
+				<div class="item item-divider">
+					<a class="car">
+						<div class="inCar">
+							<img src="img/commun.png">
+							<div>
+								<p>智联直通车</p>
+								<p>各种求职课程都在这里</p>
+							</div>
+						</div>
+						<i class="icon ion-chevron-right"></i>
+					</a>
+				</div>
+
+				<!-- 小提示 -->
+				<div class="item item-divider" style="margin: 10px 0;">
+					<div class="car">
+						<div class="inCar">
+							<img src="img/up.png">
+							<div>
+								<p>小伙伴，你还没有简历哦！</p>
+								<p>创建简历享受更多福利~</p>
+							</div>
+						</div>
+						<a>去创建</a>
+					</div>
+				</div>
+
+				<!-- 名企热招 -->
+				<div class="item item-divider" style="margin: 10px 0; padding: 0;">
+					<p style="font-size: 14pt; padding-left: 20px; margin: 10px 0 15px 0;">
+						名企热招
+					</p>
+
+					<!-- 内容滚动 -->
+					<ion-scroll direction="y" zooming="true" scrollbar-y="false" style="width: 100%; height: 300px;">
+						<div class="list" id="list">
+
+							<a class="item item-thumbnail-left">
+								<img src="img/occu1.jpg">
+								<div>
+									<h2>Smashing Pumpkins</h2>
+									<p>快来!</p>
+								</div>
+							</a>
+
+							<a class="item item-thumbnail-left">
+								<img src="img/occu1-1.jpg">
+								<div>
+									<h2>Smashing Pumpkins</h2>
+									<p>再不来!</p>
+								</div>
+							</a>
+
+							<a class="item item-thumbnail-left">
+								<img src="img/occu2.jpg">
+								<div>
+									<h2>Nirvana</h2>
+									<p>就晚了!</p>
+								</div>
+							</a>
+
+							<a class="item item-thumbnail-left">
+								<img src="img/occu3.jpg">
+								<div>
+									<h2>Beastie Boys</h2>
+									<p>心动不如行动!</p>
+								</div>
+							</a>
+
+							<a class="item item-thumbnail-left">
+								<img src="img/occu4.jpg">
+								<div>
+									<h2>Green Day</h2>
+									<p>你还在等什么!</p>
+								</div>
+							</a>
+						</div>
+					</ion-scroll>
+				</div>
+
+			</ion-content>
+		</ion-view>
+	</body>
+</html>
